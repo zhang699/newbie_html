@@ -1,0 +1,22 @@
+.title {
+  color: red;
+}
+
+.row, .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.row  {
+  border: 1px solid #ccc;
+}
+
+.row > div {
+  width: 33%;
+  border: 1px solid #ccc;
+}
+
+.row > div:hover {
+  background-color: #aaa;
+}
