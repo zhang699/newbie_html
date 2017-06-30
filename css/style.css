@@ -2,7 +2,7 @@
   color: red;
 }
 
-.row, .header {
+.row, .table-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,4 +19,51 @@
 
 .row > div:hover {
   background-color: #aaa;
+}
+
+.header {
+  height: 70px;
+  background-color: #ccc;
+  position: fixed;
+  width: 100%; 
+  top: 0;
+}
+.push {
+  flex: 1;
+}
+.avatar {
+  background-color: white;
+  align-self: center;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  width: 24px;
+  height: 24px;
+}
+
+.tail-header {
+  display: flex;
+  flex-direction: row;
+}
+.header ~ * {
+  margin-top: 70px;
+}
+
+.title-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.content-header {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  margin: 0;
+}
+
+.table {
+  height: 5000px;
 }
